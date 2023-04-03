@@ -7,11 +7,45 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="POST" action="">
-        <label></label>
-        <label></label>
-        <label></label>
-        <label></label>
+    <form method="POST" action="/api/customer/register.php">
+        <label>Email</label>
+        <input type="text"><br>
+
+        <label>Password</label>
+        <input type="password"><br>
+
+        <label>First Name</label>
+        <input type="text"><br>
+
+        <label>Last Name</label>
+        <input type="text"><br>
+
+        <label>Sex</label>
+        <select name="sex" required>
+            <option></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        <label>Birthdate</label>
+        <input type="date" name="date"><br><br>
+
+        <label><h3>Address</h3></label>
+
+        <label>Street</label>
+        <input type="text" name="street"><br>
+
+        <label>City</label>
+        <input type="text" name="city"><br>
+
+        <label>Province</label>
+        <input type="text" name="province"><br>
+
+        <label>Zipcode</label>
+        <input type="text" name="zipcode"><br>
+
+        <label>phone</label>
+        <input type="text" name="phone"><br>
     </form>
 </body>
 </html>
