@@ -7,18 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="POST" action="/api/customer/register.php">
+    <form method="POST" action="api/customer/register.php">
         <label>Email</label>
-        <input type="text"><br>
+        <input type="text" name="email" required><br>
 
         <label>Password</label>
-        <input type="password"><br>
+        <input type="password" name="password" required><br>
 
         <label>First Name</label>
-        <input type="text"><br>
+        <input type="text" name="fname" required><br>
 
         <label>Last Name</label>
-        <input type="text"><br>
+        <input type="text" name="lname" required><br>
 
         <label>Sex</label>
         <select name="sex" required>
@@ -28,24 +28,26 @@
         </select><br>
 
         <label>Birthdate</label>
-        <input type="date" name="date"><br><br>
+        <input type="date" name="date" required><br>
+
+        <label>phone</label>
+        <input type="text" name="phone" required><br><br>
 
         <label><h3>Address</h3></label>
 
         <label>Street</label>
-        <input type="text" name="street"><br>
+        <input type="text" name="street" required><br>
 
         <label>City</label>
-        <input type="text" name="city"><br>
+        <input type="text" name="city" required><br>
 
         <label>Province</label>
-        <input type="text" name="province"><br>
+        <input type="text" name="province" required><br>
 
         <label>Zipcode</label>
-        <input type="text" name="zipcode"><br>
+        <input type="text" name="zipcode" required><br>
 
-        <label>phone</label>
-        <input type="text" name="phone"><br>
+        <input type="submit" name="submit" value="Submit">
     </form>
 </body>
 </html>
