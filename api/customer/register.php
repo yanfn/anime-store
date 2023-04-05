@@ -9,10 +9,12 @@ include "function.php";
 
 $requestMethod = $_SERVER["REQUEST_METHOD"];
 
-if (isset($_POST['submit'])) {
+if ($requestMethod == "POST") {
 
+    // Used only in postman to send raw data
     $inputData = json_decode(file_get_contents("php://input"), true);
 
+    // If inputData is empty this is where the POST method is processed
     if (empty($inputData)) {
         $customer = storeCustomer($_POST);
     }
