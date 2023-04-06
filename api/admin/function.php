@@ -20,7 +20,7 @@ function getCustomerList () {
             ];
 
             http_response_code(200);
-            echo json_encode($data);
+            return json_encode($data);
         }
         else {
 
@@ -29,7 +29,7 @@ function getCustomerList () {
                 'message' => 'No Customer found'
             ];
             http_response_code(404);
-            echo json_encode($data);
+            return json_encode($data);
         }
     }
     else {
@@ -39,7 +39,7 @@ function getCustomerList () {
             'message' => 'Internal Server Error'
         ];
         http_response_code(500);
-        echo json_encode($data);
+        return json_encode($data);
     }
 }
 
@@ -62,7 +62,7 @@ function getSellerList () {
                 'data' => $response
             ];
             http_response_code(200);
-            echo json_encode($data);
+            return json_encode($data);
             
         }
         else {
@@ -72,7 +72,7 @@ function getSellerList () {
                 'message' => 'No Sellers Found'
             ];
             http_response_code(404);
-            echo json_encode($data);
+            return json_encode($data);
         }
     }
     else {
@@ -82,7 +82,7 @@ function getSellerList () {
             'message' => 'Internal Server Error'
         ];
         http_response_code(500);
-        echo json_encode($data);
+        return json_encode($data);
     }
 
 
