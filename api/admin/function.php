@@ -58,7 +58,7 @@ function getSellerList () {
 
             $data = [
                 'status' => 200,
-                'message' => 'Seller List Fetch Successfully'
+                'message' => 'Seller List Fetch Successfully',
                 'data' => $response
             ];
             http_response_code(200);

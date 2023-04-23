@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Customers Table</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <h1>Customers</h1>
+    <table id="customer-table" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>User ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Sex</th>
+                <th>Birthdate</th>
+                <th>Phone no.</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#customer-table').DataTable({
+                "ajax": {
+                    "url": "../../api/admin/customers.php",
+                    "dataSrc": "data"
+                },
+                "columns": [
+                    { "data": "id" },
+                    { "data": "user_id" },
+                    { "data": "fname" },
+                    { "data": "lname" },
+                    { "data": "sex" },
+                    { "data": "birthdate" },
+                    { "data": "phone_number" }
+
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
