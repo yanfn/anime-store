@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="/js/customer/register.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" defer></script>
+    <script src="js/register.js" defer></script>
 
 </head>
 <body>
@@ -32,21 +32,25 @@
         </select><br>
 
         <label>Birthdate</label>
-        <input type="date" name="date" required><br>
+        <input type="date" name="date" required><br><br>
 
-        <label>phone</label>
-        <input type="text" name="phone" required><br><br>
+
 
         <label><h3>Address</h3></label>
+        <label>phone</label>
+        <input type="text" name="phone" required><br>
 
-        <label>Street</label>
-        <input type="text" name="street" required><br>
+        <label>Region</label>
+        <input type="text" name="region" required><br>
+
+        <label>Province</label>
+        <input type="text" name="province" required><br>
 
         <label>City</label>
         <input type="text" name="city" required><br>
 
-        <label>Province</label>
-        <input type="text" name="province" required><br>
+        <label>Barangay</label>
+        <input type="text" name="barangay" required><br>
 
         <label>Zipcode</label>
         <input type="text" name="zipcode" required><br>
